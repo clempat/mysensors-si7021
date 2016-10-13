@@ -1,0 +1,30 @@
+{
+  "name": "ATmega328 on a breadboard (8 MHz internal clock)",
+  "upload": {
+    "protocol": "arduino",
+    "maximum_ram_size": 2048,
+    "maximum_size": 32256,
+    "speed": 57600,
+    "require_upload_port": true,
+    "tool": "avrdude"
+  },
+  "bootloader": {
+    "low_fuses": "0xE2",
+    "high_fuses": "0xDA",
+    "extended_fuses": "0x05",
+    "file": "/Applications/Arduino.app/Contents/Java/hardware/breadboard/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex",
+    "unlock_bits": "0x3F",
+    "lock_bits": "0x0F",
+    "tool": "avrdude"
+  },
+  "build": {
+    "mcu": "atmega328p",
+    "f_cpu": "8000000L",
+    "core": "arduino",
+    "variant": "standard",
+    "extra_flags": "-DARDUINO_ARCH_AVR"
+  },
+  "url": "http://example.com",
+  "frameworks": ["arduino"],
+  "vendor": "MyCompany"
+}
