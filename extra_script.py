@@ -5,7 +5,7 @@ env.Replace(
     UPLOADBOOTCMD='$UPLOADER $UPLOADERFLAGS -P $UPLOAD_PORT -b $UPLOAD_SPEED -Uflash:w:$SOURCES:i -Ulock:w:0x0F:m'
 )
 
-bootloader_path = './bootloader/atmega328_1a.hex'
+bootloader_path = './bootloader/ATmegaBOOT_168_atmega328_pro_8MHz.hex'
 uploadboot = env.Alias(
     "uploadboot", bootloader_path,
     [env.VerboseAction(env.AutodetectUploadPort, "Looking for upload port..."),

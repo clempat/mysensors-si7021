@@ -12,7 +12,6 @@
     "low_fuses": "0xE2",
     "high_fuses": "0xDA",
     "extended_fuses": "0x05",
-    "file": "/Applications/Arduino.app/Contents/Java/hardware/breadboard/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex",
     "unlock_bits": "0x3F",
     "lock_bits": "0x0F",
     "tool": "avrdude"
